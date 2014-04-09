@@ -44,6 +44,8 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
+		window.location.href = "http://ewba.co.il";
+		
         console.log('Received Event: ' + id);
     }
 };
