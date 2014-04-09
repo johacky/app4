@@ -44,7 +44,16 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-		window.location.href = "http://dev.ewba.co.il";
+		connectionStatus = navigator.onLine ? 'online' : 'offline';
+		
+		if (connectionStatus == 'online')
+		{
+			window.location.href = "http://dev.ewba.co.il";
+		}
+		else
+		{
+			alert('No internet connection');
+		}
 		
         console.log('Received Event: ' + id);
     }
