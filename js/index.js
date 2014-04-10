@@ -46,8 +46,6 @@ var app = {
 
 		connectionStatus = navigator.onLine ? 'online' : 'offline';
 		
-		alert(connectionStatus);
-		
 		if (connectionStatus == 'online')
 		{
 			window.location.href = "http://dev.ewba.co.il";
@@ -56,6 +54,7 @@ var app = {
 		{
 			alert('No internet connection');
 		}
+
 		
         console.log('Received Event: ' + id);
     }
