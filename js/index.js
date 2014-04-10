@@ -46,7 +46,7 @@ var app = {
 
 		connectionStatus = navigator.onLine ? 'online' : 'offline';
 		
-		alert('Hi!');
+		alert(connectionStatus);
 		
 		if (connectionStatus == 'online')
 		{
