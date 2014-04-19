@@ -46,15 +46,17 @@ var app = {
 
 		connectionStatus = navigator.onLine ? 'online' : 'offline';
 		
-		if (connectionStatus == 'online')
-		{
-			window.location.href = "http://dev.ewba.co.il";
-		}
-		else
-		{
-			alert('No internet connection');
-		}
-
+//		if (connectionStatus == 'online')
+//		{
+//			window.location.href = "http://dev.ewba.co.il";
+//		}
+//		else
+//		{
+//			alert('No internet connection');
+//		}
+        
+        $("#MainContent").html("KsyuKsyuKsyuKsyuKsyu");
+        
 		
         console.log('Received Event: ' + id);
     }
