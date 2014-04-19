@@ -55,7 +55,11 @@ var app = {
 //			alert('No internet connection');
 //		}
         
-        $("#MainContent").html("KsyuKsyuKsyuKsyuKsyu");
+        $("#deviceready").hide();
+        $("#MainContent").show();
+        
+        
+        $("#MainContent").html("<h1>KsyuKsyuKsyuKsyuKsyu</h1>");
         
 		
         console.log('Received Event: ' + id);
