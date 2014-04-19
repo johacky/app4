@@ -68,6 +68,7 @@ var app = {
     
     
       scan: function() {
+          alert("Scan clicked");
         console.log('scanning');
         
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
@@ -97,6 +98,7 @@ var app = {
     },
 
     encode: function() {
+        alert("encode clicked");
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.encode(scanner.Encode.TEXT_TYPE, "http://www.nhl.com", function(success) {
